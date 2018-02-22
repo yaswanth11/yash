@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Views</title>
+  <meta name="description">
+  <link rel="stylesheet" href="./css/views.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+ <script src="./js/custom.js"></script>
+</head>
+<body>
+	<!--header-->
+	<header id="header" class="header">
+      <div class="container" >
+        <h2 id="hide">
+          Intelligence Analyzer
+        </h2>
+      </div>
+	</header>
+	<div id="layout">
+		<div>
+			<div class="section1" id="menu-side">
+				<div>
+					<div class="pure-menu">
+						<h2 class="pure-menu-heading" ><b>Views</b> <span class="close">&#10006;</span></h2>
+						<!--View Menu-->
+						<ul class="pure-menu-list">
+						<form class="pure-form" action="view.php" method="get">
+						
+							<li class="pure-menu-item" id="ab"><a class="pure-menu-link">List</a></li>
+						
+							<li class="pure-menu-item" id="con"><a class="pure-menu-link">Document</a></li>
+							<li class="pure-menu-item" id="con"><a class="pure-menu-link">Graph</a></li>
+							<li class="pure-menu-item"><a class="pure-menu-link">Other</a></li>
+						</form>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="section2">
+				<div class="h-i-container" id="show">
+					<div class="h-icon"></div>
+					<div class="h-icon"></div>
+					<div class="h-icon"></div>
+				</div>
+				
+				<div>
+					<div id="main">
+						
+						<div class="content" id="list">
+						<!--List view-->
+							<div>
+								<h1 class="b-header"><b>List View</b></h1>
+								
+								<hr class="b-line"/>
+							</div>
+							<div class="outer-div">
+								<div class="act-btn">
+								<button type="button"  class="btn btn1"  >Add List</button>
+								<button type="button"  class="btn btn2"  >Remove List</button>
+								</div>
+								<div class="first">
+									<div class="sub-cnt">
+											<!--Identified Entities-->
+										<select class="upertable">
+											<option>Entity 1</option>
+											<option>Entity 2</option>
+											<option>Entity 3</option>
+											<option>Entity 4</option>
+											<option>Entity 5</option>
+										</select>
+										<div class="clr-btn">
+											<button type="button"  class="btn btn2 btnc"  id="finish" >Clear</button>
+										</div>
+									</div>
+								</div>
+								<div class="second">
+									<div class="sub-cnt">
+										<select class="upertable">
+											<option>Entity 1</option>
+											<option>Entity 2</option>
+											<option>Entity 3</option>
+											<option>Entity 4</option>
+											<option>Entity 5</option>
+										</select>
+										<div class="clr-btn">
+											<button type="button"  class="btn btn2 btnc"  id="finish" >Clear</button>
+										</div>
+									</div>
+								</div>								 
+							</div>
+						</div>
+
+						<div class="content" id="document">
+							<div>
+							<!--Document view-->
+								<h1 class="b-header"><b>Document View</b></h1>
+								
+								<hr class="b-line"/>
+							</div>
+							<div class="outer-div">
+								<h3> Under Construction</h3>
+																 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--footer-->
+	<div class="back-btn"><a href="./index.html">Back</a></div>
+	<footer id="" class="footer">
+	<div class="container">
+        <h2 id="hide">
+          &copy;Copyright by owner 	
+        </h2>
+    </div>
+</footer>
+</body>
+</html>

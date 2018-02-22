@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<link href="./css/custom.css" rel="stylesheet">
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+		<script src="./js/custom.js"></script>
+	</head>
+	<body>
+	
+		<!-- Header-->
+		
+	<header id="header" class="header">
+		<div class="container" >
+			<h2 id="hide">
+			  Selling Cart
+			</h2>
+		</div>
+	</header>
+	
+		<!-- Navigation-->
+		
+	<main>
+  
+	<input id="tab1" type="radio" name="tabs" checked>
+	<label for="tab1">File Import</label>
+
+	<input id="tab2" type="radio" name="tabs">
+	<label for="tab2">Entity Analysis</label> 	
+
+	<input id="tab3" type="radio" name="tabs">
+	<label for="tab3">Computation</label>
+		
+	<section id="content1">
+	<form method="post" action="index.php">
+		<div>
+			<h1 class="b-header"><b>Upload Your File</b></h1>
+			<hr class="b-line">
+		</div>
+		<div class="a-input">
+			<div>
+				<textarea rows="2" cols="30" id="disp_tmp_path"></textarea>
+			</div>
+			<div class="a-box">
+			
+				<!-- Buttons-->
+				
+				<label for="file-upload" class="btn btn1"> Import </label>
+				<input id="file-upload" type="file" class="btn btn1" value=""/>
+				<button type="button" onclick="clearBox('disp_tmp_path')" class="btn btn2" id="clear">Clear</button>
+				<button type="button" class="btn btn3" id="upload"  name="tabs">Uploads</button>
+			</div>			
+		</div>
+	</form>
+	</section>
+				<!-- List of Specific entities-->
+				
+	<section id="content2">
+		<div>
+			<h1 class="b-header"><b>Entity Analysis</b></h1>
+			<hr class="b-line">
+		</div>
+		<div>
+			<h2 class="b-subheader">Third Party Tools</h2>
+			<div class="b-named">
+			<input type="radio" name="select-type" value="one" class="b-radio"> None<br>
+			<input type="radio" name="select-type" value="two" class="b-radio"> Polyglot (Entities : "Phone, Email, Location")<br>
+			<input type="radio" name="select-type" value="three" class="b-radio"> Standford (Entities : "Phone, Email, Location, Organisation")<br>
+			<input type="radio" name="select-type" value="three" class="b-radio"> Standford2 (Entities : "Phone, Email, Location, Organization, Money")	
+		</div>
+		<div>
+			<h2 class="b-subheader">Rule based entity Recognition</h2>
+			<div class="b-rule">
+				<input type="checkbox" name="select-type" value="one" class="b-checkbox"> E-mail
+				<input type="checkbox" name="select-type" value="two" class="b-checkbox"> Phone
+				<input type="checkbox" name="select-type" value="three" class="b-checkbox"> Zipcode
+				<input type="checkbox" name="select-type" value="three" class="b-checkbox"> Location
+			</div>
+		</div>
+		<div>
+			<h2 class="b-subheader">Upload Custom entity Files</h2>
+		</div>
+		<div class="upload-btn-wrapper">
+			<button class="btn4">Upload a file</button>
+			<input type="file" name="myfile" />
+		    <p>* please include .txt files only<p>
+		</div>
+		<br/>
+		<button type="button"  class="btn btn3 b-finish"  id="finish"  onclick="move()">Finish</button>
+	</section>
+  
+    <section id="content3">
+		<div id="myProgress">
+			<h1 class="progree-text">Analysis is in process...</h1>
+			<div id="myBar"></div>
+		</div>
+	<div class="hide" id="my_div">
+		<form method="get" action="./views.html">
+			<button type="submit" class="btn btn3 resultbtn">Generate Analysis Report</button>
+		</form>
+	</div>	
+	</section>
+</main>
+
+			<!-- Footer-->
+			
+<footer id="header" class="footer">
+	<div class="container" >
+        <h2 id="hide">
+          &copy;Copyright by owner
+        </h2>
+    </div>
+</footer>
+  </body>
+</html>
